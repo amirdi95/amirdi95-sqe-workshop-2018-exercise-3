@@ -9,6 +9,7 @@ $(document).ready(function () {
         let codeToParse = $('#codePlaceholder').val();
         let parsedCode = parseCode(codeToParse);
         let a = cfg(parsedCode);
+
         let line = a.split(/\r?\n/);
         lines = line.filter(function (el) {
             return (el !== '');
